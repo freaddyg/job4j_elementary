@@ -5,7 +5,13 @@ public class MultiMax {
     public static int max(int first, int second, int third) {
         int result = first;
 
-        return result > second && result > third ? result : second > third ? second : third;
+        if (result > second && result > third) {
+            return result;
+        } else if (second > result && second > third) {
+            result = second;
+        } else {
+            result = third;
+        }
+        return result;
     }
-
 }

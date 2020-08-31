@@ -9,7 +9,7 @@ public class MultiMaxTest {
 
     @Test
     public void maxTest() {
-        int result = MultiMax.max(1, 2, 4);
+        int result = MultiMax.max(0, 2, 4);
         assertThat(result, is(4));
     }
 }
