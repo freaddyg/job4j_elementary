@@ -4,13 +4,11 @@ public class Mortgage {
     public static int year(double amount, int salary, double percent) {
         int year = 0;
         percent /= 100;
-        amount = amount + amount * percent;
 
         while (amount > 0) {
-           double remains = amount - salary;
-           double remainsPer = (amount - salary) * percent;
-           amount = remains + remainsPer;
-           year++;
+            amount = amount + amount * percent;
+            amount -= salary;
+            year++;
         }
         return year;
     }
