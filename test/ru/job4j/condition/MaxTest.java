@@ -6,7 +6,6 @@ import org.junit.Assert;
 
 import static org.hamcrest.core.Is.is;
 
-
 public class MaxTest {
 
     @Test

@@ -10,7 +10,6 @@ public class SwitchWeekTest {
     @Test
     public void nameOfDayTest() {
 
-
         SwitchWeek days = new SwitchWeek();
         String res = days.nameOfDay(5);
         assertThat(res, is("Пятница"));
