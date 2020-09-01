@@ -15,13 +15,13 @@ public class CheckPrimeNumberTest {
 
     @Test
     public void checkTest9() {
-        boolean rsl = CheckPrimeNumber.check(15);
+        boolean rsl = CheckPrimeNumber.check(1);
         assertThat(rsl, is(false));
     }
 
     @Test
     public void checkTest10() {
-        boolean rsl = CheckPrimeNumber.check(1);
-        assertThat(rsl, is(false));
+        boolean rsl = CheckPrimeNumber.check(2);
+        assertThat(rsl, is(true));
     }
 }
