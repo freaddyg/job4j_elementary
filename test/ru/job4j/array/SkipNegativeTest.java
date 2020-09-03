@@ -20,6 +20,4 @@ public class SkipNegativeTest {
         int[][] rsl = SkipNegative.skip(in);
         assertThat(rsl, is(expect));
     }
-
-
 }
