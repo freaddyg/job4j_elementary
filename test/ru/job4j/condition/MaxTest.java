@@ -9,8 +9,20 @@ import static org.hamcrest.core.Is.is;
 public class MaxTest {
 
     @Test
-    public void maxTest() {
+    public void maxTest2() {
         int result = Max.max(5, 17);
         Assert.assertThat(result, is(17));
+    }
+
+    @Test
+    public void maxTest3() {
+        int result = Max.max(5, 17, 30);
+        Assert.assertThat(result, is(30));
+    }
+
+    @Test
+    public void maxTest4() {
+        int result = Max.max(5, 17, 15, 88);
+        Assert.assertThat(result, is(88));
     }
 }
