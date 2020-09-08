@@ -28,9 +28,9 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        Point a = new Point(2, 0, 6);
+        Point a = new Point(2, 0, 7);
         Point b = new Point(0, 2, 4);
-        double dist = a.distance(b);
+        double dist = a.distance3d(b);
         System.out.println(dist);
     }
 }
