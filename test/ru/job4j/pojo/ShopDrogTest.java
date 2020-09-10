@@ -10,12 +10,14 @@ public class ShopDrogTest {
 
     @Test
     public void whenDropFirst() {
-        Product[] products = new Product[2];
+        Product[] products = new Product[4];
         products[0] = new Product("Milk", 10);
         products[1] = new Product("Bread", 4);
+        products[2] = new Product("Juce", 7);
+        products[3] = new Product("Lemon", 9);
         Product[] rsl = ShopDrop.leftShift(products, 0);
         assertThat(rsl[0].getName(), is("Bread"));
-        assertThat(rsl[1], is(nullValue()));
+        assertThat(rsl[3], is(nullValue()));
     }
 
     @Test
