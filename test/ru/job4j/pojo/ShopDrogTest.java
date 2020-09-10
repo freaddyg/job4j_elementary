@@ -15,8 +15,8 @@ public class ShopDrogTest {
         products[1] = new Product("Bread", 4);
         products[2] = new Product("Juce", 7);
         products[3] = new Product("Lemon", 9);
-        Product[] rsl = ShopDrop.leftShift(products, 0);
-        assertThat(rsl[0].getName(), is("Bread"));
+        Product[] rsl = ShopDrop.leftShift(products, 1);
+        assertThat(rsl[1].getName(), is("Juce"));
         assertThat(rsl[3], is(nullValue()));
     }
 
